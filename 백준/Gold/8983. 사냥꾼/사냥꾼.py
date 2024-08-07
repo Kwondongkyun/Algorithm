@@ -12,19 +12,18 @@ for i in range(N):
     l_N.append([x, y])
 
 cnt=0
-for i in range(len(l_N)):
+for x,y in l_N:
     start=0
-    end=len(l_M)
+    end=M
     while start<=end:
         mid=(start+end)//2
-        check=abs(l_M[mid]-l_N[i][0])+l_N[i][1]
+        check=abs(l_M[mid]-x)+y
         if check <= L:
             cnt+=1
             break
+        if x>=l_M[mid]:
+            start=mid+1
         else:
-            if l_N[i][0]>=l_M[mid]:
-                start=mid+1
-            else:
-                end=mid-1
+            end=mid-1
             
 print(cnt)

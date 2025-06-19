@@ -12,12 +12,12 @@ rl.on('line', function (line) {
     str = input[0];
     let result = '';
     
-    for(let i=0;i<str.length;i++){
-        if(str[i]>='A' && str[i]<='Z'){
-            result+=str[i].toLowerCase();
+    for(let ch of str){
+        if(ch === ch.toUpperCase()){
+            result+=ch.toLowerCase();
         }
-        else if(str[i]>='a' && str[i]<='z'){
-            result+=str[i].toUpperCase();
+        else{
+            result+=ch.toUpperCase();
         }
     }
     console.log(result);

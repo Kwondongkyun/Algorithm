@@ -1,5 +1,5 @@
 function solution(a, b) {
-    var answer = 0;
-    answer = Math.max(Number(`${a}${b}`), 2*a*b);
-    return answer;
+    let num1 = parseInt(a+""+b);
+    let num2 = 2*a*b;
+    return num1>=num2?num1 : num2;
 }

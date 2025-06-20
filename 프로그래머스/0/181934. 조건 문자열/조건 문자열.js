@@ -1,5 +1,4 @@
 function solution(ineq, eq, n, m) {
-    var answer = 0;
     if(ineq === "<"){
         if(eq==="=")
             return n <= m?1:0;
@@ -12,5 +11,4 @@ function solution(ineq, eq, n, m) {
         else if(eq==="!")
             return n>m?1:0;
     }
-    return n ;
 }

@@ -6,5 +6,5 @@ function solution(num_list) {
         gob*=num;
         hab+=num;
     }
-    return gob>hab**2?0:1;
+    return gob > hab**2 ? 0 : 1;
 }

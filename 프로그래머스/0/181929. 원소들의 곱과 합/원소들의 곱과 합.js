@@ -2,7 +2,7 @@ function solution(num_list) {
     var answer = 0;
     let gob=1;
     let hab=0;
-    for(num of num_list){
+    for(const num of num_list){
         gob*=num;
         hab+=num;
     }

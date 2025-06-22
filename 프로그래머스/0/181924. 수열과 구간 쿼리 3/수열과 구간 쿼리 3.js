@@ -6,7 +6,7 @@ function solution(arr, queries) {
     //     arr[queries[i][0]]=arr[queries[i][1]];
     //     arr[queries[i][1]]=num;
     // }
-    for([a,b] of queries){
+    for(let [a,b] of queries){
         [arr[a],arr[b]]=[arr[b],arr[a]];
     }
     return arr;
